@@ -53,33 +53,11 @@
 <body>
 <div class="page-wrapper">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<div class="section">
 		<hr class="class-1" />
 		<h1>Audio Samples</h1>
 		<hr class="class-1" />
-		<p class="body">This demo accompanies our paper titled 'Fine-Grained Quantitative Control of Emotion Rendering for Speech Generation', in which we introduce a novel emotion representation called Sequential Emotion Distribution (Sequential ED). This representation facilitates modeling of emotion intensity at varying granularities. The following audio files showcase examples of our model's capabilities, illustrating both global and fine-grained emotion adjustments.</p>
+		<p class="body">This demo accompanies our paper titled 'Fine-Grained Quantitative Control of Emotion Rendering for Speech Generation', in which we introduce a novel emotion representation called Sequential Emotion Distribution (Sequential ED). This representation facilitates modeling of emotion intensity at varying granularities. The following audio files showcase examples of our model's capabilities, illustrating both global and fine-grained emotion adjustments. You can try more audio samples in the following sections.</p>
 		<hr>
 		<div class="table-container">
 			<table>
@@ -210,7 +188,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="2"><h4>Increase 'Sad' intensity as the speech goes (Female)</h4></td>
+					<td colspan="2"><h4>Gradually Increase 'Sad' intensity throughout a speech (Female)</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -230,7 +208,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="2"><h4>Increase 'Sad' intensity as the speech goes (Male)</h4></td>
+					<td colspan="2"><h4>Gradually Increase 'Sad' intensity throughout a speech (Male)</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -250,7 +228,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="2"><h4>Decrease 'Happy' intensity as the speech goes (Female)</h4></td>
+					<td colspan="2"><h4>Gradually Decrease 'Happy' intensity throughout a speech (Female)</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -270,7 +248,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="2"><h4>Decrease 'Happy' intensity as the speech goes (Male)</h4></td>
+					<td colspan="2"><h4>Gradually Decrease 'Happy' intensity throughout a speech (Male)</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -1114,7 +1092,7 @@
 		<hr class="class-1" />
 		<h1>Section 4: Utterance-level Control: Increase Emotion Intensity</h1>
 		<hr class="class-1" />
-		<p class="body">This is the description of the reference mel</p>
+		<p class="body">In this section, we provide a demo where we generate the audio files to display varying emotion intensities for a given emotion, specifically at levels 0.2, 0.8, 1.4, and 2.0. The utterance-level intensities of all other emotions are set to 0.0, while the emotions at the word and phoneme levels remained unchanged.</p>
 		<hr>
 		<h2>Emotion: Angry</h2>
 		<hr>
@@ -1731,9 +1709,9 @@
 	</div>
 	<div class="section">
 		<hr class="class-1" />
-		<h1>Section 6: Partial Control: First Three Words</h1>
+		<h1>Section 5: Maximizing Emotion Intensities of the 'First' Three Words</h1>
 		<hr class="class-1" />
-		<p class="body">This is the description of the reference mel</p>
+		<p class="body">In this section, we demonstrate the control of emotion intensities in a specific segment of speech, primarily focusing on the FIRST three words. We elevate the word-level emotion intensities of these words, and the corresponding phoneme-level intensities, to 1.0,while maintaining the other emotion intensities constant. This showcases our model's ability to adjust emotion granularlywithin specified speech segments.</p>
 		<hr>
 		<div class="table-container">
 			<table>
@@ -1749,7 +1727,7 @@
 					<th>Surprise</th>
 				</tr>
 				<tr>
-					<td colspan="4"><h4>Transcript: {She had said,} so that one could keep up a conversation!</h4></td>
+					<td colspan="4"><h4>{She had said,} so that one could keep up a conversation!</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -1793,7 +1771,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="4"><h4>Transcript: {Must a name} mean something?</h4></td>
+					<td colspan="4"><h4>{Must a name} mean something?</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -1837,7 +1815,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="4"><h4>Transcript: {Who is been} repeating all that hard stuff to you?</h4></td>
+					<td colspan="4"><h4>{Who is been} repeating all that hard stuff to you?</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -1881,7 +1859,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="4"><h4>Transcript: {Rat came and} replied on the leaves.</h4></td>
+					<td colspan="4"><h4>{Rat came and} replied on the leaves.</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -1930,9 +1908,9 @@
 	</div>
 	<div class="section">
 		<hr class="class-1" />
-		<h1>Section 7: Partial Control: First Last Words</h1>
+		<h1>Section 6: Maximizing Emotion Intensities of the 'Last' Three Words</h1>
 		<hr class="class-1" />
-		<p class="body">This is the description of the reference mel</p>
+		<p class="body">In this section, we demonstrate the control of emotion intensities in a specific segment of speech, primarily focusing on the LAST three words. We elevate the word-level emotion intensities of these words, and the corresponding phoneme-level intensities, to 1.0,while maintaining the other emotion intensities constant. This showcases our model's ability to adjust emotion granularlywithin specified speech segments.</p>
 		<hr>
 		<div class="table-container">
 			<table>
@@ -1948,7 +1926,7 @@
 					<th>Surprise</th>
 				</tr>
 				<tr>
-					<td colspan="4"><h4>Transcript: She had said, so that one could keep {up a conversation!}</h4></td>
+					<td colspan="4"><h4>She had said, so that one could keep {up a conversation!}</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -1992,7 +1970,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="4"><h4>Transcript: Must a {name mean something?}</h4></td>
+					<td colspan="4"><h4>Must a {name mean something?}</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -2036,7 +2014,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="4"><h4>Transcript: Who is been repeating all that hard {stuff to you?}</h4></td>
+					<td colspan="4"><h4>Who is been repeating all that hard {stuff to you?}</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -2080,7 +2058,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="4"><h4>Transcript: Rat came and replied {on the leaves.}</h4></td>
+					<td colspan="4"><h4>Rat came and replied {on the leaves.}</h4></td>
 				<td class="center-align">
 					<div class="audio-container">
 						<audio controls>
@@ -2129,9 +2107,9 @@
 	</div>
 	<div class="section">
 		<hr class="class-1" />
-		<h1>Section 9: Increasing Intensity by the words</h1>
+		<h1>Section 7: Gradually Increasing Emotion Intensity throughout a speech</h1>
 		<hr class="class-1" />
-		<p class="body">This is the description of the reference mel</p>
+		<p class="body">In this section, we exhibit our model's capability to gradually INCREASE emotion intensities throughout a speech. We maintain the utterance-level intensities of the other emotions at 0.0, while word and phoneme-level intensities are randomly generated as detailed in Section 2 of this demo, and further described in our paper.</p>
 		<hr>
 		<div class="table-container">
 			<table>
@@ -2287,9 +2265,9 @@
 	</div>
 	<div class="section">
 		<hr class="class-1" />
-		<h1>Section 10: Decreasing Intensity by the words</h1>
+		<h1>Section 8: Gradually Decreasing Emotion Intensity throughout a speech</h1>
 		<hr class="class-1" />
-		<p class="body">This is the description of the reference mel</p>
+		<p class="body">In this section, we exhibit our model's capability to gradually DECREASE emotion intensities throughout a speech. We maintain the utterance-level intensities of the other emotions at 0.0, while word and phoneme-level intensities are randomly generated as detailed in Section 2 of this demo, and further described in our paper.</p>
 		<hr>
 		<div class="table-container">
 			<table>
